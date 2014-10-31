@@ -211,6 +211,19 @@
   </div>
 {% endif %}
 
+{% if settings.travel_enabled %}
+  <div class="sixteen columns featured_links">
+    <div class="section clearfix">
+      <a href="{{ settings.feature1_link }}">
+        <div class="image_container">
+          <img src="{{ 'travel.jpg' | asset_url }}" alt="{{ settings.travel_text }}" />
+          {% if settings.travel_text != blank %}<span>{{ settings.travel_text }}</span>{% endif %}
+        </div>
+      </a>
+    </div>
+  </div>
+{% endif %}
+
 
 {% if settings.homepage_sidebar %}
   {% include 'sidebar' %}
