@@ -214,11 +214,50 @@
 {% if settings.travel_enabled %}
   <div class="sixteen columns featured_links">
     <div class="section clearfix">
-      <a href="{{ settings.feature1_link }}">
+      <a href="{{ settings.travel_link }}">
         <div class="image_container">
           <img src="{{ 'travel.jpg' | asset_url }}" alt="{{ settings.travel_text }}" />
           {% if settings.travel_text != blank %}<span>{{ settings.travel_text }}</span>{% endif %}
-        </div>
+        </div
+      </a>
+    </div>
+  </div>
+{% endif %}
+
+{% if settings.tiendas_enabled %}
+  <div class="eight columns featured_links">
+    <div class="section clearfix">
+      <a href="{{ settings.tiendas_link }}">
+        <div class="image_container">
+          <img src="{{ 'tiendas.jpg' | asset_url }}" alt="{{ settings.tiendas_text }}" />
+          {% if settings.tiendas_text != blank %}<span>{{ settings.tiendas_text }}</span>{% endif %}
+        </div
+      </a>
+    </div>
+  </div>
+{% endif %}
+
+{% if settings.contacto_enabled %}
+  <div class="eight columns featured_links">
+    <div class="section clearfix">
+      <a href="{{ settings.contacto_link }}">
+        <div class="image_container">
+          <img src="{{ 'contacto.jpg' | asset_url }}" alt="{{ settings.contacto_text }}" />
+          {% if settings.contacto_text != blank %}<span>{{ settings.contacto_text }}</span>{% endif %}
+        </div
+      </a>
+    </div>
+  </div>
+{% endif %}
+
+{% if settings.giving_back_enabled %}
+  <div class="sixteen columns featured_links">
+    <div class="section clearfix">
+      <a href="{{ settings.giving_back_link }}">
+        <div class="image_container">
+          <img src="{{ 'giving_back.jpg' | asset_url }}" alt="{{ settings.giving_back_text }}" />
+          {% if settings.giving_back_text != blank %}<span>{{ settings.giving_back_text }}</span>{% endif %}
+        </div
       </a>
     </div>
   </div>
