@@ -161,7 +161,7 @@
 
       <div class="header mm-fixed-top {% unless template contains "index" %}header_bar{% endunless %}">
         <div class="container"> 
-          <div class="four columns logo">
+          <div id="logo-nav" class="four columns logo">
             <a href="{{ shop.url }}" title="{{ shop.name }}">
               {% if settings.use_logo %}
                 <img src="{{ 'logo.png' | asset_url }}" class="logo-img" alt="{{ shop.name }}" data-src="{{ 'logo.png' | asset_url }}" {% if settings.use_logo_home %}data-src-home="{{ 'logo_home.png' | asset_url }}"{% endif %} />
@@ -171,7 +171,7 @@
             </a>
           </div>
 
-          <div class="twelve columns nav mobile_hidden">
+          <div id="desktop-nav" class="twelve columns nav mobile_hidden">
             <ul class="menu">
               {% for link in linklists[settings.main_linklist].links %}
                 {% if linklists[link.handle] == empty %}
@@ -285,7 +285,7 @@
                 </li>
               {% endif %}
               <li>
-                <a href="#cart" class="icon-cart cart-button">{% if cart.item_count > 0 %}<div class="cart_count">{{ cart.item_count }}</div>{% endif %} <span>Cart</span></a>
+                <a href="#cart" class="icon-cart cart-button">{% if cart.item_count > 0 %}<div class="cart_count">{{ cart.item_count }}</div>{% endif %}</a>
               </li>
             </ul>
           </div>
@@ -419,8 +419,7 @@
           <div class="ten columns">
             <p class="credits">
               &copy; {{ "now" | date: "%Y" }} {{ shop.name }}.
-              {% if settings.display_designed_by == true %}Designed by <a href="http://outofthesandbox.com/" target="_blank" title="Retina Shopify Theme by Out of the Sandbox">Out of the Sandbox</a>. {% endif %}
-              {{ powered_by_link | replace: '" target', '?ref=out-of-the-sandbox" target' }}
+              {% if settings.display_designed_by == true %}Tailored by <a href="http://globalpark.mx/" target="_blank" title="Retina Shopify Theme">Global Park</a>. {% endif %}
             </p>
           </div>
 

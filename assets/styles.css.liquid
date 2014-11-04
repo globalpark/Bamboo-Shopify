@@ -61,6 +61,38 @@ table {
   display: block;
 }
 
+.sub-footer h6,
+.sub-footer p,
+.sub-footer .social_icons a, 
+.sub-footer .social_icons a:visited,
+.footer{
+  color: #fff !important;
+}
+
+.homepage_content p{
+  font-size: 18px;
+  text-align: center;
+}
+
+.cart-button{
+  background-color: transparent !important;
+  color: inherited;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#search-toggle{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.travel-span,
+.tiendas-span,
+.contacto-span,
+.giving-back-span{
+  /*font-size: 40px !important;*/
+}
+
     
 /* #Basic Styles
 ================================================== */
@@ -413,8 +445,8 @@ div#header a span {
   {% endif %}
 }
 .index .header .nav a.icon-cart {
-  color: {{ settings.nav_color }};
-  text-shadow: none;
+  /*color: {{ settings.nav_color }};
+  text-shadow: none;*/
 }
 .index .header .nav a:hover, .index .header .nav a:focus {
   color: {{ settings.nav_color_hover }};
@@ -441,7 +473,7 @@ div#header a span {
 .nav ul li .cart-button, input.guest_button, input[type="button"].guest_button {
   font-size: 16px;
   background-color: {{ settings.cart_button_background }};
-  padding: 8px 15px 8px 15px;
+  padding: 8px 0px 8px 0px;
   -webkit-border-radius: 4px;
   -khtml-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -3791,6 +3823,14 @@ div.cloudzoom-ajax-loader {
     .container .offset-by-thirteen              { padding-left: 780px; }
     .container .offset-by-fourteen              { padding-left: 840px; }
     .container .offset-by-fifteen               { padding-left: 900px; }
+
+    #desktop-nav{
+      width: 70%;
+    }
+
+    #logo-nav{
+      width: 20%;
+    }
   }
 
 
@@ -3845,6 +3885,14 @@ div.cloudzoom-ajax-loader {
         .container .offset-by-thirteen              { padding-left: 624px; }
         .container .offset-by-fourteen              { padding-left: 672px; }
         .container .offset-by-fifteen               { padding-left: 720px; }
+
+        #desktop-nav{
+          width: 70%;
+        }
+
+        #logo-nav{
+          width: 20%;
+        }
     }
 
 
