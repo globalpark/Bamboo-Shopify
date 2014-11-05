@@ -317,7 +317,7 @@
 
           <div class="four columns">
             {% if settings.footer_linklist_1 != blank %}
-              <h6 class="title">{{ linklists[settings.footer_linklist_1].title }}</h6>
+              <!-- <h6 class="title">{{ linklists[settings.footer_linklist_1].title }}</h6> -->
               <ul class="footer_menu">
                 {% for link in linklists[settings.footer_linklist_1].links %}
                   <li><a href="{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a></li>
@@ -328,7 +328,7 @@
 
           <div class="four columns">
             {% if settings.footer_linklist_2 != blank %}
-              <h6 class="title">{{ linklists[settings.footer_linklist_2].title }}</h6>
+              <!-- <h6 class="title">{{ linklists[settings.footer_linklist_2].title }}</h6> -->
               <ul class="footer_menu">
                 {% for link in linklists[settings.footer_linklist_2].links %}
                   <li><a href="{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a></li>
@@ -339,7 +339,7 @@
 
           <div class="four columns">
             {% if settings.footer_content_page != blank %}
-              <h6 class="title">{{ pages[settings.footer_content_page].title }}</h6>
+              <!-- <h6 class="title">{{ pages[settings.footer_content_page].title }}</h6> -->
               {{ pages[settings.footer_content_page].content }}
             {% endif %}
 
