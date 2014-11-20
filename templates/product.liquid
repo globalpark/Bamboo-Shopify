@@ -146,6 +146,34 @@
     {% endif %}
   </div>
 
+  {% if product.tags contains 'head-turn' %}
+
+    {% assign image = product.images.last %}
+
+    <!--<div class="sixteen columns">
+
+      <div id="headturn-container">
+        <img id="headturn" src="http://globalpark.com.mx/wp-content/uploads/2014/11/headturn.jpeg">
+      </div>
+
+      <script type="text/javascript" src="{{ 'headturn.js' | asset_url }}"></script>
+      
+    </div> -->
+
+    <div class="sixteen columns">
+
+      <div id="headturn-container" class="center">
+        <img id="headturn" src="{{ image.src | product_img_url: 'master' }}">
+      </div>
+
+      <script type="text/javascript" src="{{ 'headturn.js' | asset_url }}"></script>
+      
+    </div>
+
+    
+
+  {% endif %}
+
   {% if product.description contains "<!-- split -->"  %}
     <br class="clear" />
     <div class="section clearfix">
